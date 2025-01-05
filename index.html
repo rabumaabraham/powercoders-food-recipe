@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Delicious Recipes and Cooking Inspiration">
+   <meta name="author" content="Your Name">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   <title>Food Recipe</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Food Recipe</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav_list">
+               <li><a href="#home" class="nav__link active-link">Home</a></li>
+               <li><a href="#recipes" class="nav__link">Recipes</a></li>
+               <li><a href="#meal" class="nav__link">API Suggestion</a></li>
+               <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-3-line"></i>
+         </div>
+      </nav>
+   </header>
+
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home_container container grid">
+            <img src="images/home.jpg" alt="image" class="home_img">
+
+            <div class="home_data">
+               <h1 class="home_name">Get Food Recipe</h1>
+               <h3 class="home_note">Explore Recipes</h3>
+            </div>
+
+            <a href="#recipes" class="home_scroll">
+
+               <div class="home_scroll-box">
+                  <i class="ri-arrow-down-line"></i>
+               </div>
+
+               <span class="home_scroll-text">Browse Recipes</span>
+
+            </a>
+
+         </div>
+
+      </section>
+
+      <!--==================== RECIPES ====================-->
+      <section class="recipes section" id="recipes">
+         <h2 class="section__title">Our Recipes</h2>
+
+         <div class="recipes_container container grid">
+            <article class="recipe_card">
+               <a href="#" class="recipe_link">
+                  <div class="recipe_img-container">
+                     <img src="images/1.jpg" alt="Spaghetti Carbonara" class="recipe_img">
+                  </div>
+                  <div class="recipe_content">
+                     <h2 class="recipe_title">Spaghetti Carbonara</h2>
+                     <p class="recipe_description">A classic Italian pasta dish made with eggs, cheese, pancetta, and
+                        pepper.</p>
+                     <a href="https://youtu.be/3AAdKl1UYZs" target="_blank"><button class="button recipe_button">Watch
+                           Tutorial</button></a>
+                  </div>
+               </a>
+            </article>
+
+            <article class="recipe_card">
+               <a href="#" class="recipe_link">
+                  <div class="recipe_img-container">
+                     <img src="images/2.jpg" alt="Chicken Tikka Masala" class="recipe_img">
+                  </div>
+                  <div class="recipe_content">
+                     <h2 class="recipe_title">Chicken Tikka Masala</h2>
+                     <p class="recipe_description">A popular Indian dish made with marinated chicken and a spiced tomato
+                        sauce.</p>
+                     <a href="https://youtu.be/lnRmIKkGCIA" target="_blank"><button class="button recipe_button">Watch
+                           Tutorial</button></a>
+                  </div>
+               </a>
+            </article>
+
+            <article class="recipe_card">
+               <a href="#" class="recipe_link">
+                  <div class="recipe_img-container">
+                     <img src="images/3.jpg" alt="Chocolate Cake" class="recipe_img">
+                  </div>
+                  <div class="recipe_content">
+                     <h2 class="recipe_title">Chocolate Cake</h2>
+                     <p class="recipe_description">A rich and moist chocolate cake topped with creamy chocolate
+                        frosting.</p>
+                     <a href="https://youtu.be/vI5w-fK25w4" target="_blank"><button class="button recipe_button">Watch
+                           Tutorial</button></a>
+                  </div>
+               </a>
+            </article>
+
+            <!-- Add more recipe cards as needed -->
+         </div>
+      </section>
+
+      <!--==================== MEAL suggestion====================-->
+      <section id="meal" class="meal-section">
+         <div class="container">
+            <h2 class="meal-title">Get Suggestion using API</h1>
+               <div class="category-buttons">
+                  <button class="category-button" data-category="Chicken">Chicken</button>
+                  <button class="category-button" data-category="Beef">Beef</button>
+                  <button class="category-button" data-category="Vegetarian">Vegetarian</button>
+                  <button class="category-button" data-category="Seafood">Seafood</button>
+                  <button class="category-button" data-category="Dessert">Dessert</button>
+               </div>
+               <div id="meal-cards" class="meal-cards-container">
+                  <!-- Meal cards will be dynamically inserted here -->
+               </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">Contact Us</h2>
+         <div class="contact__container container grid">
+            <form action="https://formspree.io/f/xnnqqqbe" method="POST" class="contact__form grid" id="contact-form">
+               <div class="contact__group grid">
+                  <input type="text" name="name" placeholder="Name" required class="contact__input">
+                  <input type="email" name="email" placeholder="E-mail" required class="contact__input">
+               </div>
+               <textarea name="message" placeholder="Message" class="contact__input contact__area"></textarea>
+               <button type="submit" class="button contact__button">Send Message</button>
+               <p class="contact__message" id="contact-message"></p>
+            </form>
+         </div>
+      </section>
+
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <ul class="footer__links">
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#recipes" class="footer__link">Recipes</a></li>
+            <li><a href="#meal" class="footer__link">Suggestion</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+         </ul>
+         <span class="footer__copy">&#169; 2025 by <a href="https://rabumaabraham.github.io/#home"
+               target="_blank">Rabuma</a>. All rights reserved.</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!-- link -->
+   <script src="js/scrollreveal.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
