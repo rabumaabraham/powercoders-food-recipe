@@ -21,7 +21,7 @@ A dynamic web application where users can explore recipes from various categorie
 
 ## Demo
 
-Check out the live demo of the project [here](https://your-username.github.io/recipe-explorer).
+Check out the live demo of the project [here](https://rabumaabraham.github.io/powercoders-food-recipe/#).
 
 ## Technologies Used
 
